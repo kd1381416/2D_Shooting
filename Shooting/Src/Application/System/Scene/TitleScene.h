@@ -1,0 +1,18 @@
+#pragma once
+#include"State.h"
+
+class C_Title;
+
+class C_TitleScene :public C_State
+{
+public:
+	C_TitleScene();
+	~C_TitleScene();
+
+	void Init()override;
+	void Update()override;
+	void Draw()override;
+private:
+
+	C_Title* Title;
+};
