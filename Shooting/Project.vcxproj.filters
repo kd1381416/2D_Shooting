@@ -64,6 +64,9 @@
     <Filter Include="Src\Application\System\Key">
       <UniqueIdentifier>{07d220d6-823b-4264-8c4a-5d946d8beef8}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Src\Application\System\Mouse">
+      <UniqueIdentifier>{8c6a5dbd-f3a1-4987-9a79-3d4ed706eca4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Pch.h">
@@ -183,6 +186,9 @@
     <ClInclude Include="Src\Application\System\Key\KeyManager.h">
       <Filter>Src\Application\System\Key</Filter>
     </ClInclude>
+    <ClInclude Include="Src\Application\System\Mouse\Mouse.h">
+      <Filter>Src\Application\System\Mouse</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Pch.cpp">
@@ -271,6 +277,9 @@
     </ClCompile>
     <ClCompile Include="Src\Application\System\Key\KeyManager.cpp">
       <Filter>Src\Application\System\Key</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Application\System\Mouse\Mouse.cpp">
+      <Filter>Src\Application\System\Mouse</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

@@ -164,6 +164,7 @@
     <ClInclude Include="Src\Application\main.h" />
     <ClInclude Include="Src\Application\System\Key\KeyManager.h" />
     <ClInclude Include="Src\Application\System\Load\Load.h" />
+    <ClInclude Include="Src\Application\System\Mouse\Mouse.h" />
     <ClInclude Include="Src\Application\System\Scene\GameScene.h" />
     <ClInclude Include="Src\Application\System\Scene\SceneManager.h" />
     <ClInclude Include="Src\Application\System\Scene\State.h" />
@@ -197,6 +198,7 @@
     <ClCompile Include="Src\Application\main.cpp" />
     <ClCompile Include="Src\Application\System\Key\KeyManager.cpp" />
     <ClCompile Include="Src\Application\System\Load\Load.cpp" />
+    <ClCompile Include="Src\Application\System\Mouse\Mouse.cpp" />
     <ClCompile Include="Src\Application\System\Scene\GameScene.cpp" />
     <ClCompile Include="Src\Application\System\Scene\SceneManager.cpp" />
     <ClCompile Include="Src\Application\System\Scene\State.cpp" />
