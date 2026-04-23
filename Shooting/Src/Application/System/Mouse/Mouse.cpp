@@ -10,8 +10,9 @@ void C_Mouse::Update()
 {
 	GetCursorPos(&m_MousePos);
 	ScreenToClient(APP.m_window.GetWndHandle(), &m_MousePos);
-	m_MousePos.x = ScrWidth / 2;
-	m_MousePos.y = ScrHeight / 2;
+	m_MousePos.x -= ScrWidth / 2;
+	m_MousePos.y -= ScrHeight / 2;
+	m_MousePos.y *= -1;
 }
 
 void C_Mouse::Draw()

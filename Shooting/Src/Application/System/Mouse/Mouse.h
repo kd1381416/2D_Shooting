@@ -15,7 +15,7 @@ public:
 	void Update();
 	void Draw();
 
-	POINT& GetMousePos() { return m_MousePos; }
+	const POINT& GetMousePos() const{ return m_MousePos; }
 
 private:
 	C_Mouse(){}
