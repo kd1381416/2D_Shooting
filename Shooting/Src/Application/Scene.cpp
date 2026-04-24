@@ -17,6 +17,8 @@ void Scene::Update()
 
 void Scene::Init()
 {
+	ShowCursor(false);
+
 	MOUSE.Init();
 	SCENEMANAGER.ChangeState(new C_TitleScene);
 	SCENEMANAGER.Init();

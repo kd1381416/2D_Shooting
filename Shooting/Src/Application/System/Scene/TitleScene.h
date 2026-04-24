@@ -14,5 +14,5 @@ public:
 	void Draw()override;
 private:
 
-	C_Title* Title;
+	C_Title* m_Title = nullptr;
 };

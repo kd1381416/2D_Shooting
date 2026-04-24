@@ -1,30 +1,36 @@
 #include"TitleScene.h"
+
 #include"Src/Application/System/Load/Load.h"
 #include"Src/Application/Title/Title.h"
 
 C_TitleScene::C_TitleScene()
 {
-	Title = new C_Title;
+	m_Title = new C_Title;
 	LOAD.TitleTexLoad();
 }
 
 C_TitleScene::~C_TitleScene()
 {
-	delete Title;
-	LOAD.TitleTexRelease();
+	if(m_Title)
+	{
+		LOAD.TitleTexRelease();
+
+		delete m_Title;
+		m_Title = nullptr;
+	}
 }
 
 void C_TitleScene::Init()
 {
-	Title->Init();
+	m_Title->Init();
 }
 
 void C_TitleScene::Update()
 {
-	Title->Update();
+	m_Title->Update();
 }
 
 void C_TitleScene::Draw()
 {
-	Title->Draw();
+	m_Title->Draw();
 }

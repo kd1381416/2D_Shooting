@@ -1,5 +1,6 @@
 #pragma once
 #include"State.h"
+class C_Game;
 
 class C_GameScene :public C_State
 {
@@ -12,4 +13,5 @@ public:
 	void Draw()override;
 private:
 
+	C_Game* m_Game = nullptr;
 };
