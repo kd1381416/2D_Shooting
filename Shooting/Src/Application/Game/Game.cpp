@@ -1,7 +1,7 @@
 #include"Game.h"
 #include"Src/Application/System/Mouse/Mouse.h"
 #include"Src/Application/System/Key/KeyManager.h"
-#include"Src/Application/System/Scene/SceneManager.h"
+#include"Src/Application/Scene/SceneManager.h"
 
 C_Game::C_Game()
 {

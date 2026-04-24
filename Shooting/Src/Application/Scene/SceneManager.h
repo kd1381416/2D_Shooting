@@ -1,6 +1,6 @@
 #pragma once
-#include"TitleScene.h"
-#include"GameScene.h"
+#include"Src/Application/Scene/TitleScene/TitleScene.h"
+#include"Src/Application/Scene/GameScene/GameScene.h"
 
 class C_SceneManager
 {
@@ -8,7 +8,7 @@ public:
 
 	~C_SceneManager();
 
-	void ChangeState(C_State* newState)
+	void ChangeState(C_BaseScene* newState)
 	{
 		delete currentState;
 		currentState = newState;
@@ -34,8 +34,8 @@ private:
 
 	C_SceneManager(){}
 
-	C_State* currentState = nullptr;
-	C_State* optionState = nullptr;
+	C_BaseScene* currentState = nullptr;
+	C_BaseScene* optionState = nullptr;
 
 public:
 

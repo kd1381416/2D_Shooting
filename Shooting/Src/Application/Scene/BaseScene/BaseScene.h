@@ -1,11 +1,11 @@
 #pragma once
 
-class C_State
+class C_BaseScene
 {
 public:
 
-	C_State() {}
-	~C_State() {}
+	C_BaseScene() {}
+	~C_BaseScene() {}
 
 	virtual void Init() = 0;
 	virtual void Update() = 0;

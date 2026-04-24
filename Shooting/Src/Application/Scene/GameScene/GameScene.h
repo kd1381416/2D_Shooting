@@ -1,8 +1,10 @@
 #pragma once
-#include"State.h"
+
+#include"Src/Application/Scene/BaseScene/BaseScene.h"
+
 class C_Game;
 
-class C_GameScene :public C_State
+class C_GameScene :public C_BaseScene
 {
 public:
 	C_GameScene();

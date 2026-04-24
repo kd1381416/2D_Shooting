@@ -5,7 +5,7 @@
 
 C_TitleScene::C_TitleScene()
 {
-	m_Title = new C_Title;
+	m_Title = std::make_shared<C_TitleScene>();
 	LOAD.TitleTexLoad();
 }
 
@@ -14,9 +14,6 @@ C_TitleScene::~C_TitleScene()
 	if(m_Title)
 	{
 		LOAD.TitleTexRelease();
-
-		delete m_Title;
-		m_Title = nullptr;
 	}
 }
 

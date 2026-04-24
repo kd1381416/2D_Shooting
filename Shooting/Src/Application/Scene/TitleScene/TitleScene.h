@@ -1,9 +1,9 @@
 #pragma once
-#include"State.h"
+#include"Src/Application/Scene/BaseScene/BaseScene.h"
 
 class C_Title;
 
-class C_TitleScene :public C_State
+class C_TitleScene :public C_BaseScene
 {
 public:
 	C_TitleScene();
@@ -14,5 +14,5 @@ public:
 	void Draw()override;
 private:
 
-	C_Title* m_Title = nullptr;
+	std::shared_ptr<C_TitleScene> m_Title;
 };
